@@ -16,9 +16,6 @@ class lamptestViewProducts extends JView
 		$voucherDiscount = $model->voucherDiscount();
 
 		$total = $checkouttotal->checkouttotal - $voucherDiscount->voucherdiscount;
-
-		
-		$params = &JComponentHelper::getParams( 'com_lamptest' ); //parameter to determine which metrics are displayed
 		
 		$this->assignRef('params', $params);
 		$this->assignRef('products', $products);
